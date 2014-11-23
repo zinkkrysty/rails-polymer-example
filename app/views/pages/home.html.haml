@@ -1,1 +1,12 @@
-%h1 Hi all!
+%core-scaffold
+  %core-header-panel{:flex => "", :mode => "seamed", :navigation => ""}
+    %core-toolbar Menu
+    %core-menu{:theme => "core-light-theme"}
+      %core-item{:icon => "settings", :label => "Home"}
+        = link_to "", '#'
+      %core-item{:icon => "settings", :label => "About"}
+        = link_to "", '#'
+  %div{:tool => ""} Polymer Rails App with Bootstrap
+  .container-fluid
+    %h1 Totally awesome rails app
+    %p This is going to rock
