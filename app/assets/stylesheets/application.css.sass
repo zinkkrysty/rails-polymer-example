@@ -1,2 +1,13 @@
 @import "bootstrap-sprockets"
 @import "bootstrap"
+
+$brand-color: #3fa3dc
+
+core-toolbar
+  background-color: $brand-color
+  color: #fff
+
+core-header-panel[drawer]
+  background-color: #eee
+  core-toolbar
+    background-color: mix($brand-color, #000, 70%)

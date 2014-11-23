@@ -1,12 +1,13 @@
-%core-scaffold
-  %core-header-panel{:flex => "", :mode => "seamed", :navigation => ""}
+%core-drawer-panel
+  %core-header-panel{drawer: true, :flex => true, :mode => "seamed", :navigation => ""}
     %core-toolbar Menu
     %core-menu{:theme => "core-light-theme"}
-      %core-item{:icon => "settings", :label => "Home"}
+      %core-item{:icon => "home", :label => "Home"}
         = link_to "", '#'
-      %core-item{:icon => "settings", :label => "About"}
+      %core-item{:icon => "help", :label => "About"}
         = link_to "", '#'
-  %div{:tool => ""} Polymer Rails App with Bootstrap
-  .container-fluid
-    %h1 Totally awesome rails app
-    %p This is going to rock
+  %core-header-panel{main: true, :flex => true, :mode => "seamed", :navigation => ""}
+    %core-toolbar Polymer Rails App with Bootstrap
+    .container-fluid
+      %h1 Totally awesome rails app
+      %p This is going to rock
